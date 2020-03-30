@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Poppins|Roboto|Nobile|Prompt|Questrial&display=swap');
+
+* {
+    background-color: #131313;
+    margin: 17px;
+}
+#header {
+    color: #db3056;
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center;
+    font-size: 37px;
+}
+#slogan {
+    color: #fac1cd;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+#content {
+    text-align: center;
+}
+#content>#textbox {
+    width: 720px;
+    height: 45px;
+    font-family: 'Roboto';
+    border-radius: 200px;
+    background-color: aliceblue;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+}
+#content>#sendbutton {
+    background-color: aliceblue;
+    font-family: Roboto;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+}
+#content>#sendbutton:hover {
+    background-color: #db3056;
+    width: 60px;
+    height: 60px;
+}
+#sendbutton:hover {
+    color: white;
+}
+#txtBg {
+    width: 500px;
+    height: 95px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+}
+#txtOutput {
+    color: #131313;
+    padding: 20px;
+    font-family: Roboto;
+    background-color: transparent;
+    text-align: start;
+}
+#restartButton {
+    color: #131313;
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 52px;
+    margin-top: 27%;
+    margin-left: 97%;
+    border-radius: 200px;
+}
+#nevels {
+    color: #131313;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    list-style: none;
+    padding: 15px;
+    margin: 10px;
+    font-size: 18px;
+    margin: 20px 0;
+    padding-left: 635px;
+}
+li {
+    margin: 35px 0;
+}
+ul li {
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 13px;
+    width: 400px;
+    height: 60px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 20px;
+    justify-items: center;
+}
+#caracteresCounter {
+    color: #808185;
+    font-family: 'Roboto', 'sans-serif';
+    opacity: 32%;
+    position: absolute;
+    right: 1294px;
+    top: 236px;
+}
+#dateTxt {
+    color: aliceblue;
+    font-family: 'Roboto';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: end;
+    opacity: 12%;
+}
+#logOff {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    display: block;
+    width: 5px;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 35px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+#logOff:hover {
+    color: #db3056;
+    font-size: 50px;
+}
+.fab fa-telegram-plane {
+    position: relative;
+    margin-right: 200px;
+}

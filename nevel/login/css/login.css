@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,600,700|Poppins:400,500,700|Roboto:400,500,700&display=swap');
+* {
+    border: 0;
+    margin: 0;
+}
+body {
+    background-color: #111518;
+}
+#loginTxt {
+    text-align: center;
+    font-size: 34px;
+    padding-left: 765px;
+    padding-top: 200px;
+    padding-bottom: 80px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+#emailField {
+    text-align: center;
+    padding-left: 785px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+#emailTxt {
+    text-align: center;
+    padding-left: 379px;
+    font-size: 18px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+#passwordField {
+    text-align: center;
+    padding-left: 785px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+#passwordTxt {
+    text-align: center;
+    padding-right: 368px;
+    padding-bottom: 18px;
+    font-size: 18px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+#forgotP {
+    padding-left: 628px;
+    padding-top: 8px;
+    color: #eb1b48e0;
+    font-weight: lighter;
+    text-decoration: solid;
+    height: 20px;
+    position: absolute;
+}
+input  {
+    height: 47px;
+    width: 440px;
+    border-radius: 5px;
+    padding-left: 15px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+#buttonI {
+    position: relative;
+    border-radius: 50px;
+    font-size: 34px;
+    height: 55px;
+    width: 150px;
+    border: 2.5px solid #eb1b48e0;
+    background-color: unset;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    margin-left: 1265px;
+}
+#buttonI:hover {
+    background-color: #eb1b48e0;
+}
+#social {
+    margin-left: 20px;
+    color: aliceblue;
+    padding-left: 1255px;
+    padding-top: 50px;
+    font-size: 46px;
+}
+#facebookIcon {
+   cursor: pointer; 
+   transition-duration: 0.4s;
+}
+#facebookIcon:hover {
+    cursor: pointer; 
+    color: #eb1b48e0;
+    font-size: 60px;
+ }
+ #googleIcon {
+    cursor: pointer; 
+    transition-duration: 0.4s;
+ }
+ #googleIcon:hover {
+    cursor: pointer; 
+    color: #eb1b48e0;
+    font-size: 60px;
+ }
+ #twitterIcon {
+    cursor: pointer; 
+    transition-duration: 0.4s;
+ }
+ #twitterIcon:hover {
+    cursor: pointer; 
+    color: #eb1b48e0;
+    font-size: 60px;
+ }
+ 

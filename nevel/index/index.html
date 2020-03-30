@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./components/favicon.ico">
+    <script src="https://kit.fontawesome.com/5c779e6a11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id='top'>
+        <div id='header'><h1>Nevel.</h1></div>
+        <div id='slogan'>.</div>
+    </div>
+    
+    <div id='content'>
+        <input type="text" id='textbox' placeholder="Say.">
+        <input type="button" id='sendbutton' value="Send" onclick="send()" disabled>
+        <br><span id='caracteresCounter' value='131'>131</span>
+    </div>
+    <div id='texts'>
+            <ul id='nevels'>
+                
+            </ul>
+        </div>
+    <div id='logOff'>
+        <i class="fas fa-sign-in-alt" onclick="window.location.href='/login/login.html'""></i>
+    </div>
+    </div>
+    <div id='dateTxt'>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

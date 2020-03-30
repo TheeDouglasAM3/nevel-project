@@ -1,0 +1,7 @@
+#barColor {
+    position: fixed;
+    width: 800px;
+    height: 1000px;
+    background-color: #eb1b48e0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+}
