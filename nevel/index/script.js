@@ -12,25 +12,21 @@ let caracteresCounter = document.getElementById('caracteresCounter')
 
 dateTxt.innerHTML = date
 
+showNevelMessages()
+
 //Send nevel
 button.onclick = function send(event) {   
-    let value = textbox.value
-    let newNevel = document.createElement('li')
-    newNevel.textContent = textbox.value
+
+        let value = textbox.value
+
         if (Object.keys(value).length > 131) {
                 textbox.value = ' '
         } else {
                 //nevels.appendChild(newNevel)
-                nevels.insertBefore(newNevel, nevels.childNodes[0]);
+                _insertMessage(textbox.value)
                 textbox.value = ' '
-        }
-        //Nevels Storage
-        function nevelsStorage() {
-                button.addEventListener('click',  () => {
-                localStorage.setItem('nevel', value)
-                }) 
-        }
-        nevelsStorage()
+                storeNevelMessages()
+        }   
 } 
 
 textbox.onkeyup = function counterC(event) {
@@ -57,6 +53,39 @@ textbox.onkeyup = function counterC(event) {
                 document.getElementById('sendbutton').style.color = '#131313'
         } 
 }
+
+function showNevelMessages(){
+        let msgs = JSON.parse(localStorage.getItem('nevelListMessages'))
+
+        if(msgs){
+                msgs.reverse()
+                msgs.forEach(elem => _insertMessage(elem))
+        }
+        
+}
+
+function storeNevelMessages(){
+        let nevelMsgs = _getNevelCurrentMessages();
+        localStorage.setItem('nevelListMessages', JSON.stringify(nevelMsgs))
+}
+
+function _getNevelCurrentMessages(){
+        let nevelMsgsHTML = document.querySelectorAll('.nevelMsg')
+        let nevelMsgs = []
+        nevelMsgsHTML.forEach( elem => {
+                nevelMsgs.push(elem.textContent)
+        })
+        return nevelMsgs
+}
+
+function _insertMessage(message){
+        let newNevel = document.createElement('li')
+        newNevel.className = 'nevelMsg'
+        newNevel.textContent = message
+        nevels.insertBefore(newNevel, nevels.childNodes[0])
+}
+
+
 
 
 
